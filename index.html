@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Books — hellhunter</title>
+  <title>Hellhunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <h1>About my books</h1>
-    <p class="lead">A series of books — covers below. Click a cover to see details and buy links.</p>
+    <span class="wordmark">Hellhunter</span>
+    <p class="byline">by Max Kostyuchenko</p>
   </header>
 
   <main>
@@ -17,17 +20,18 @@
 
     <section id="detail" class="detail hidden" aria-live="polite">
       <div class="detail-inner">
-        <div id="detail-cover" class="detail-cover" aria-hidden="true"></div>
+        <div id="detail-cover" class="detail-cover"></div>
         <div class="detail-meta">
+          <p id="detail-status" class="status-badge"></p>
           <h2 id="detail-title"></h2>
           <p id="detail-desc"></p>
-          <p id="detail-links" class="buy-links"></p>
+          <div id="detail-links" class="buy-links"></div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">© Author</footer>
+  <footer class="site-footer">© Max Kostyuchenko</footer>
 
   <script src="script.js"></script>
 </body>
