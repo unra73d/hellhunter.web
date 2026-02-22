@@ -1,0 +1,12 @@
+# Node
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
